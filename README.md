@@ -1,2 +1,1 @@
-# sxdwdwd.github.io
-Resource navigation
+# 资源分享站
