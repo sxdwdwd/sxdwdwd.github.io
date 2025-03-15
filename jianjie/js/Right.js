@@ -85,7 +85,7 @@ let isFullScreen = false;
         };
 
         var image = document.createElement("img");
-        image.src = "https://jsd.cdn.zzko.cn/gh/rcy1314/tuchuang@main/uPic/weixin.png";
+        image.src = "../static/img/zhifu.png";
         image.style.position = "absolute";
         image.style.top = "50%";
         image.style.left = "50%";
@@ -95,4 +95,15 @@ let isFullScreen = false;
 
         overlay.appendChild(image);
         document.body.appendChild(overlay);
+    }
+    // 图片弹出监听
+    function pop(imgPath) {
+        document.getElementById('popupImage').src = imgPath;
+        document.getElementById('imagePopup').style.display = 'block';
+        document.getElementById('imagePopup').addEventListener('click', closePopup);
+    }
+
+    function closePopup() {
+        document.getElementById('imagePopup').style.display = 'none';
+        document.getElementById('imagePopup').removeEventListener('click', closePopup);
     }
