@@ -3,7 +3,7 @@
   top: 22%;
   right: -500px;
   transform: translateY(-50%);
-  width: 180px;
+  width: 160px;
   height: 160px;
   background-color: transparent;
   padding: 1px;
@@ -52,8 +52,8 @@
   left: 0;
   width: 100%;
   text-align: center;
-  color: #fbfbfb;
-  font-size: 13px;
+  color: #f0f3f1;
+  font-size: 19px;
   transform: translateY(-50%);
   text-shadow: 0 0 5px rgba(12, 12, 12, 0.8); /* 文字发光效果 */
   
