@@ -2,19 +2,29 @@
 // 广告数组
 var ads = [
   {
-    image: "../static/img/logo.png",
-    link: "https://sxdnbnb.github.io/",
-    description: "作者的技术博客"
+    image: "../static/img/k2.gif",
+    link: "",
+    description: ""
   },
   {
-    image: "../static/img/4.png",
+    image: "../static/img/k3.gif",
     link: "https://mm.diskgirl.com",
-    description: "随机小姐姐"
+    description: ""
   },
   {
-    image: "../static/img/i38.png",
-    link: "../static/img/qq.png",
-    description: "广告位"
+    image: "../static/img/k1.gif",
+    link: "",
+    description: ""
+  },
+  {
+    image: "../static/img/k4.gif",
+    link: "",
+    description: ""
+  },
+  {
+    image: "../static/img/k5.gif",
+    link: "",
+    description: ""
   },
   // {
   //   image: "https://jsd.cdn.noisework.cn/gh/rcy1314/tuchuang@main/20230818/2321312.1o5qd8jb6elc.jpg",
