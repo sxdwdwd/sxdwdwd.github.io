@@ -3,27 +3,27 @@
 var ads = [
   {
     image: "../static/img/k2.gif",
-    link: "",
+    link: "https://www.xuexi.cn/",
     description: ""
   },
   {
     image: "../static/img/k3.gif",
-    link: "",
+    link: "https://ccgg.pro/",
     description: ""
   },
   {
     image: "../static/img/k1.gif",
-    link: "",
+    link: "https://ikun.cm/",
     description: ""
   },
   {
     image: "../static/img/k4.gif",
-    link: "",
+    link: "https://hl40.co/",
     description: ""
   },
   {
     image: "../static/img/k5.gif",
-    link: "",
+    link: "https://ikun.cm/",
     description: ""
   },
   // {
