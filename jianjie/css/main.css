@@ -548,13 +548,13 @@ a {
   #footer p {
     position: absolute;
     left: 34%;  /* 三分之一页面宽度 */
-    bottom: 2px; /* 与底部有一点间距 */
+    bottom: 3px; /* 与底部有一点间距 */
     transform: translateX(-50%); /* 让文本自身水平居中 */
     white-space: nowrap; /* 防止换行 */
   }
   #uv-container {
     position: absolute;
-    right: 34%; /* 让容器左侧对齐页面宽度的 2/3 处 */
+    left: 75%; /* 让容器左侧对齐页面宽度的 2/3 处 */
     bottom: 1px; /* 调整底部间距 */
     transform: translateX(-50%); /* 让自身水平居中 */
     white-space: nowrap; /* 防止内容换行 */
