@@ -8,7 +8,7 @@ var ads = [
   },
   {
     image: "../static/img/k3.gif",
-    link: "https://mm.diskgirl.com",
+    link: "",
     description: ""
   },
   {
@@ -129,7 +129,7 @@ function closeAd() {
 // 延迟2.5秒后立即弹出广告
 setTimeout(changeAd, 2500);
 
-// 定时器，每隔8秒更换图片、链接和文字说明
+// 定时器，每隔5秒更换图片、链接和文字说明
 setInterval(changeAd, 5000);
 
 // 绑定关闭按钮的点击事件

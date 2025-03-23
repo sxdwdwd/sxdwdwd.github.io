@@ -3,8 +3,8 @@
   top: 22%;
   right: -500px;
   transform: translateY(-50%);
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   background-color: transparent;
   padding: 1px;
   box-sizing: border-box;
@@ -17,7 +17,8 @@
 /* 手机端不显示广告位 */
 @media (max-width: 600px) {
   .ad-container {
-    display: none;
+    /* display: none; */
+    display: default;
   }
 }
 
