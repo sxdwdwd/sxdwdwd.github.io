@@ -2,27 +2,27 @@
 // 广告数组
 var ads = [
   {
-    image: "https://www.yotu.net/i/67f4a0ab3f686.gif",
+    image: "../static/img/k2.gif",
     link: "https://www.xuexi.cn/",
     description: ""
   },
   {
-    image: "https://www.yotu.net/i/67f4a0acb3dcf.gif",
+    image: "../static/img/k3.gif",
     link: "https://ccgg.pro/",
     description: ""
   },
   {
-    image: "https://www.yotu.net/i/67f4a0aed32d2.gif",
+    image: "../static/img/k1.gif",
     link: "https://ikun.cm/",
     description: ""
   },
   {
-    image: "https://www.yotu.net/i/67f4a0aaec06f.gif",
+    image: "../static/img/k4.gif",
     link: "https://hl40.co/",
     description: ""
   },
   {
-    image: "https://www.yotu.net/i/67f4a0ab073b6.gif",
+    image: "../static/img/k5.gif",
     link: "https://ikun.cm/",
     description: ""
   },
