@@ -123,7 +123,7 @@ html {
 html {
     /*图片模糊背景＋黑色透明卡片+白色svg**/
     --name: 主题5;
-    --main_bg_color: url(../img/back4.jpg);
+    --main_bg_color: url(https://www.yotu.net/i/67f4a0ad54804.jpg);
     --main_text_color: #eeeeee;
     --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
     --purple_text_color: #747bff;
