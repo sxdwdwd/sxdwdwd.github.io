@@ -71,7 +71,7 @@ let isFullScreen = false;
     function changeMode() {
         // Your code to change the mode goes here
     }
-    function showImage() {
+    function showImage(imgElement) {
         var overlay = document.createElement("div");
         overlay.style.position = "fixed";
         overlay.style.top = "0";
@@ -85,7 +85,7 @@ let isFullScreen = false;
         };
 
         var image = document.createElement("img");
-        image.src = "./static/img/zhifu.png";
+        image.src = imgElement.src; 
         image.style.position = "absolute";
         image.style.top = "50%";
         image.style.left = "50%";

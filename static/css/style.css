@@ -768,12 +768,12 @@ footer {
 .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
     right: 50%;
 }
-/*鼠标小黑猫光标*/
-button {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur),alias}
-p {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur),auto}
-a {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto}
-a:active {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur),alias}
-body {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur),auto}
+/*鼠标光标*/
+button {cursor:url(../mouse/pointer.cur),alias}
+p {cursor:url(../mouse/pointer.cur),auto}
+a {cursor:url(../mouse/pointer.cur),auto}
+a:active {cursor:url(../mouse/pointer.cur),alias}
+body {cursor:url(../mouse/default.cur),auto}
 
 hr.dashed {
     border: none;

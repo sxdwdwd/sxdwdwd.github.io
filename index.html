@@ -142,13 +142,15 @@
 			<div class="left-div left-time">
 				<ul id="line1">
 						<div class="container">
+							<class="title">《随机一言》
+								<hr class="dashed">
 							<span id="hitokoto">正在获取中...</span>
 						</div>
 						<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>  
 				</ul>
 			</div>
 			<!-- 随机一言结束-->
-	    <!-- 60秒读懂世界-->
+	    	<!-- 60秒读懂世界-->
 			<div class="left-div left-time">
 				<ul id="line">
 					<div class="container">
@@ -163,12 +165,12 @@
 				<ul id="line2">
 				 <li>
 				<div class="container">
-					<img id="moyuImage" src="loading.gif" alt="摸鱼日历图片">
+					<img id="moyuImage" src="loading.gif" alt="摸鱼日历图片" onclick="showImage(this)">
 				</div>
-			</li>
-		</ul>
-	</div>
-	<!-- 摸鱼日历结束-->
+				 </li>
+				</ul>
+			</div>
+			<!-- 摸鱼日历结束-->
 		</div>
 	
 		<div class="noise-right">
@@ -1350,47 +1352,48 @@
 		<div onclick="" class="tc-main">
 			<img class="tc-img" src="" alt="" srcset="">
 		</div>
-		<script>
+		
+		<!-- 60秒读懂世界 -->
+		<script> 
 			// 使用 fetch API 请求指定的 URL
-			fetch('https://www.wudada.online/Api/ScD')
-				.then(response => response.json())
+			fetch('https://60s-api.viki.moe/v2/60s?encoding=text')
+				.then(response => response.text())  // 使用 .text() 获取纯文本
 				.then(data => {
-					// 检查data是否为null
-					if (data === null) {
-						// 如果data为null，显示默认错误消息
+					// 检查data是否为空
+					if (!data) {
 						const contentDiv = document.querySelector('.content');
 						const p = document.createElement('p');
 						p.textContent = '请求失败，没有返回有效信息';
 						contentDiv.appendChild(p);
 					} else {
-						// 如果data不是null，检查code字段
-						if (data.code === '200') {
-							// 如果code是200，显示content字段的信息
-							const contentDiv = document.querySelector('.content');
-							data.data.content.forEach(item => {
-								const p = document.createElement('p');
-								p.textContent = item.content;
-								contentDiv.appendChild(p);
-							});
-						} else {
-							// 如果code不是200，显示msg字段的信息
-							const contentDiv = document.querySelector('.content');
+						const contentDiv = document.querySelector('.content');
+						// 按行分割文本并展示每一条新闻
+						const newsItems = data.split('\n').filter(item => item.trim() !== '');  // 按行分割并去除空行
+						newsItems.forEach((item, index) => {
+							// 跳过第一条
+							if (index === 0) {
+								return;
+							}
 							const p = document.createElement('p');
-							p.textContent = data.msg || '请求失败，没有返回有效信息';
+							p.textContent = item;  // 直接显示新闻内容
 							contentDiv.appendChild(p);
-						}
+			
+						});
 					}
 				})
 				.catch(error => {
 					console.error('请求出错:', error);
+					const contentDiv = document.querySelector('.content');
+					const p = document.createElement('p');
+					p.textContent = '请求出错，请稍后再试';
+					contentDiv.appendChild(p);
 				});
-		</script>
-
+			</script>
 <script>
     // 当文档加载完毕时执行
     document.addEventListener('DOMContentLoaded', function() {
         // 获取摸鱼日历API的URL
-        var apiURL = 'api/moyu?type=json';
+        var apiURL = 'https://api.vvhan.com/api/moyu?type=json';
 
         // 使用fetch API请求摸鱼日历API
         fetch(apiURL)
